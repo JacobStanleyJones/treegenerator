@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body,
+			html {
+				height: 100%;
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				background-color: #4d4d4d;
+			}
+			span {
+				margin-top: 10px;
+				color: #aaaaaa;
+			}
+			#myCanvas {
+				background-color: #303030;
+			}
+			.btn {
+				cursor: pointer;
+				background-color: #aaaaaa;
+				color: #303030;
+				border-radius: 5px;
+				padding: 5px;
+			}
+			#clearBtn:hover {
+				background-color: rgb(215, 64, 64);
+			}
+			#growBtn:hover {
+				background-color: green;
+				color: #aaaaaa;
+			}
+			#downloadBtn:hover {
+				background-color: rgb(243, 240, 42);
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="myCanvas"></canvas>
+		<span>CLICK/DRAG - Draw | SPACE - Grow</span>
+		<span>Bidirectional: <input type="checkbox" id="bidirectionalCheck" /></span>
+		<span>
+			<span id="clearBtn" class="btn">Clear</span>
+			<span id="growBtn" class="btn">Grow</span>
+			<span id="downloadBtn" class="btn">Download</span>
+		</span>
+		<script src="tree.js"></script>
+	</body>
+</html>
